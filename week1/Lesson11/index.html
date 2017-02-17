@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app='App'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js">
+    </script>
+    <script src="app.js">
+    </script>
+    <title>Feed App</title>
+  </head>
+  <body  >
+    <h1>Feed App</h1>
+    <div ng-controller='AppController'>
+     {{name}} has a message for you :<br>
+     {{sayMessage()}}
+     <div >
+       <button ng-click="feedSezgi()"> Feed Sezgi </button>
+       <br>
+       <img src="images/sezgi_{{state}}.jpg">
+     </div>
+    </div>
+  </body>
+</html>
